@@ -1,0 +1,51 @@
+.contenedorfooter{
+    width: 100vw;
+    padding: 2px;
+    display: flex;
+    min-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(3, 35, 54);    
+}
+.footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width: 700px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+.columnaf{
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.titulo{
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3f3f3f;
+    font-weight: 300;
+    font-style: italic;
+    -webkit-text-stroke:1px #f5be09;
+}
+.texto{
+    font-size: 0.8rem;
+}
+#imgenf{
+    height: 100px;
+    width: 200px;
+}
+.logos{
+    height: 50px;
+    width: 50px;
+}
+#imagenes{
+    display: flex;
+    flex-wrap: wrap;
+}

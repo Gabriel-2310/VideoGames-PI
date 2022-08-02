@@ -1,0 +1,107 @@
+#imagenfondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contencardsgame{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    min-height: 100vh;
+    position: relative;   
+}
+
+.cardgame{
+    position: relative;
+    width: 150px;
+    height: 200px;  
+    margin: 25px; 
+    z-index: 2; 
+}
+
+.cardgame .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.cardgame .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.cardgame .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardgame .front h3{
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    line-height: 10px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4) ;
+}
+
+.cardgame .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 1px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.cardgame .back .linkdetail {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.cardgame .back .linkdetail p {
+    font-size: 8px;
+    color: #f5be09;
+}
+
+.cardgame .back h3{
+    font-size: 15px;
+    margin-top: 1px;
+    letter-spacing: 1px;
+}
+
+.cardgame .back h5 {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 1px;
+}
+
+.cardgame .back ul {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+    margin-top: 1px;
+}
+
+.cardgame:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.cardgame:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}

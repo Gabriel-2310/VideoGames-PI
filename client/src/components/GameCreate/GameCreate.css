@@ -1,0 +1,84 @@
+.entorno{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    width: 100%;
+    height: 100vh;
+
+}
+.danger{    
+    border-color: #f80000;
+    font-size: 0.9rem;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+span{
+    color: #f80000;
+}
+
+.create{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;    
+    padding: 10px;
+    background-color: rgb(3, 35, 54);
+    box-shadow: 5px 0 10px rgb(0, 0, 0, .6);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+.partesuperior{
+    display: flex;
+    flex-wrap: wrap;
+}
+.general{
+    padding-right: 4%;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3f3f3f;
+    font-weight: 300;
+    font-style: italic;
+    -webkit-text-stroke:1px #f5be09;
+}
+
+label{    
+    color: #f5be09;
+    font-weight: 700;
+}
+h3{    
+    color: #f5be09;
+    font-weight: 700;
+}
+.imagen{
+    width: 20vh;
+    height: 20vh;
+}
+.butonHome2{    
+    display: inline-block;
+    border: none;
+    height: 25px;
+    border-radius: 15px;
+    width: 150px;
+    background-color: #f5be09;
+    font-size: 0.9rem;
+    color: #3f3f3f;
+    font-weight: 700;
+    transition: 90ms;
+    margin-top: 24px;
+}
+.gener{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.gen{
+    display: flex;
+}
